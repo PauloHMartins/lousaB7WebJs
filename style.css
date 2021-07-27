@@ -32,7 +32,7 @@ h1 {
 
 .colorArea {
   margin: auto;
-  background-image: url('/assets/img/palheta.png');
+  background-image: url('/palheta.png');
   background-position: 80%;
   background-size: contain;
   width: 300px;
@@ -45,7 +45,7 @@ h1 {
   width: 500px;
 }
 .borracha {
-  background-image: url('/assets/img/borracha.png');
+  background-image: url('/borracha.png');
   width: 100px;
   height: 100px;
   justify-content: left;
