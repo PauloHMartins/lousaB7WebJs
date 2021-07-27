@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#tela {
+  border-top: 20px solid #6a3308;
+  border-bottom: 20px solid #6a3308;
+  border-left: 10px solid #6a3308;
+  border-right: 10px solid #6a3308;
+  background-color: #fff;
+  cursor: crosshair;
+  border-radius: 10px;
+}
+
+.colorArea {
+  margin: auto;
+  background-image: url('/assets/img/palheta.png');
+  background-position: 80%;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  display: flex;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.borracha {
+  background-image: url('/assets/img/borracha.png');
+  width: 100px;
+  height: 100px;
+  justify-content: left;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.color {
+  flex: 1;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 60%;
+  margin-right: 10px;
+}
+.color.active {
+  border: 5px solid #fff;
+}
+.y {
+  margin-top: 110px;
+  margin-left: -30px;
+  height: 60px;
+}
+.g {
+  margin-top: 40px;
+  height: 60px;
+  margin-left: -10px;
+}
+.r {
+  margin-top: 30px;
+  height: 60px;
+  margin-left: -10px;
+}
+.b {
+  height: 70px;
+  margin-top: 80px;
+  margin-left: 10px;
+}
+
+.clear {
+  display: inline-block;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  width: 250px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 20px;
+  color: #222;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  canvas {
+    width: 340px;
+    height: 170px;
+  }
+  .menu {
+    width: 340px;
+  }
+  #tela {
+    border-top: 10px solid #6a3308;
+    border-bottom: 10px solid #6a3308;
+    border-left: 5px solid #6a3308;
+    border-right: 5px solid #6a3308;
+  }
+}
